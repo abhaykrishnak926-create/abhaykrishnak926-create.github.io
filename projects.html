@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Abhay Krishna K</title>
+<meta name="description" content="Projects by Abhay Krishna K.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="index.html" class="brand">
+      <span style="font-family: var(--font-display); font-weight: 700; font-size: 1.3rem;"></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html" class="btn btn-primary nav-login">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <p class="eyebrow">Projects</p>
+    <h1>What I've built.</h1>
+    <p class="hero-sub">Real projects, tracked honestly — what's live, what's in progress.</p>
+  </section>
+
+  <section class="section">
+    <div class="case-study">
+      <div class="case-header">
+        <h3>Scam &amp; Phishing Detector</h3>
+        <span class="status-pill">Live</span>
+      </div>
+      <p class="case-field"><strong>Problem —</strong> Text-based scams and phishing links are easy to miss, and most detection tools aren't tuned for how scam messages actually read.</p>
+      <p class="case-field"><strong>Solution —</strong> A text classifier for scam messages, paired with a separate URL/phishing classifier so both the message and the link can be checked.</p>
+      <p class="case-field"><strong>Built with —</strong> TF-IDF + Logistic Regression for text classification, trained on a custom 5,000-row dataset for Indian-context scam messages, reaching 96% recall on spam. A Random Forest model handles URL/phishing detection using PhiUSIIL features.</p>
+      <a href="https://scam-detector-30nr.onrender.com" class="text-link" target="_blank" rel="noopener">View project →</a>
+    </div>
+
+    <div class="case-study">
+      <div class="case-header">
+        <h3>GIBYT</h3>
+        <span class="status-pill">Live</span>
+      </div>
+      <p class="case-field"><strong>Problem —</strong> A software studio needs a real website — not just static pages, but working accounts, a database, and a dashboard.</p>
+      <p class="case-field"><strong>Solution —</strong> A full Flask application: public marketing pages, user signup/login with hashed passwords, a PostgreSQL database, an account dashboard, and a working contact form — plus rate limiting and security headers.</p>
+      <p class="case-field"><strong>Built with —</strong> Python, Flask, Flask-SQLAlchemy, Flask-Login, PostgreSQL, and vanilla HTML/CSS/JS on the frontend.</p>
+      <a href="https://gibyt-webapp.onrender.com" class="text-link" target="_blank" rel="noopener">View project →</a>
+    </div>
+
+    <div class="case-study">
+      <div class="case-header">
+        <h3>FabricVault</h3>
+        <span class="status-pill status-pill-muted">In progress</span>
+      </div>
+      <p class="case-field"><strong>Problem —</strong> Fabric and textile sellers need a simple, dedicated online store rather than a generic marketplace listing.</p>
+      <p class="case-field"><strong>Solution —</strong> An e-commerce site built specifically for fabric and textile products.</p>
+      <p class="case-field"><strong>Status —</strong> In progress — tech stack and deployment details to come.</p>
+    </div>
+
+    <div class="placeholder-card placeholder-card-wide">
+      <span class="status-pill status-pill-muted">More on the way</span>
+      <p>
+        These are the first projects I've shipped. As more get finished,
+        they'll be added here with the same breakdown: problem, solution,
+        technologies used, and current status.
+      </p>
+      <a href="contact.html" class="text-link">Have something in mind? Get in touch →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span style="font-family: var(--font-display); font-weight: 700; font-size: 1.3rem;">Abhay Krishna K</span>
+      <p class="footer-tagline">CSE AIML Student</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Site</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:abhaykrishnak926@gmail.com">abhaykrishnak926@gmail.com</a>
+      </div>
+      <div class="footer-col">
+        <h4>Elsewhere</h4>
+        <a href="https://github.com/abhaykrishnak926-create" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/abhay-krishna-k-b422a4380" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Abhay Krishna K. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="static/js/script.js"></script>
+</body>
+</html>
