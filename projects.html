@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projects — Abhay Krishna K</title>
-<meta name="description" content="Projects by Abhay Krishna K.">
+<meta name="description" content="Projects by Abhay Krishna K — Scam & Phishing Detector, GIBYT, and DYNAMIS Fitness.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -14,105 +14,75 @@
 
 <header class="site-header">
   <nav class="navbar" aria-label="Main navigation">
-    <a href="index.html" class="brand">
-      <span style="font-family: var(--font-display); font-weight: 700; font-size: 1.3rem;"></span>
-    </a>
+    <a href="about.html" class="brand">Abhay Krishna K</a>
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
     <div class="nav-links" id="navLinks">
-      <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="projects.html" class="active">Projects</a>
       <a href="skills.html">Skills</a>
-      <a href="contact.html" class="btn btn-primary nav-login">Contact</a>
+      <a href="contact.html">Contact</a>
     </div>
   </nav>
 </header>
 
 <main>
-
-  <section class="page-hero">
-    <p class="eyebrow">Projects</p>
-    <h1>Completed and Ongoing Work</h1>
-    <p class="hero-sub">A record of projects, including current status and deployment.</p>
-  </section>
-
-  <section class="section">
-    <div class="case-study">
-      <div class="case-header">
-        <h3>Scam &amp; Phishing Detector</h3>
-        <span class="status-pill">Live</span>
-      </div>
-      <p class="case-field"><strong>Problem —</strong> Text-based scams and phishing links are difficult to detect, and most existing tools are not tuned to how scam messages are actually written.</p>
-      <p class="case-field"><strong>Solution —</strong> A text classifier for scam messages, paired with a separate URL/phishing classifier to evaluate both the message and the link.</p>
-      <p class="case-field"><strong>Built with —</strong> TF-IDF and Logistic Regression for text classification, trained on a custom 5,000-row dataset of Indian-context scam messages, achieving 96% recall on spam. A Random Forest model handles URL/phishing detection using PhiUSIIL features.</p>
-      <a href="https://scam-detector-30nr.onrender.com" class="text-link" target="_blank" rel="noopener">View project →</a>
+  <div class="content-container">
+    <div class="page-header">
+      <h1>Projects</h1>
     </div>
 
-    <div class="case-study">
-      <div class="case-header">
-        <h3>GIBYT</h3>
-        <span class="status-pill">Live</span>
-      </div>
-      <p class="case-field"><strong>Problem —</strong> A software studio required a fully functional website with account management, a database, and a dashboard, rather than static pages.</p>
-      <p class="case-field"><strong>Solution —</strong> A full Flask application including public marketing pages, user signup and login with hashed passwords, a PostgreSQL database, an account dashboard, a working contact form, rate limiting, and security headers.</p>
-      <p class="case-field"><strong>Built with —</strong> Python, Flask, Flask-SQLAlchemy, Flask-Login, PostgreSQL, and HTML/CSS/JS on the frontend.</p>
-      <a href="https://gibyt-webapp.vercel.app/" class="text-link" target="_blank" rel="noopener">View project →</a>
-    </div>
+    <div class="project-list">
+      <article class="project-item">
+        <div class="project-top">
+          <h2 class="project-title">Scam &amp; Phishing Detector</h2>
+          <a href="https://scam-detector-30nr.onrender.com" class="project-link" target="_blank" rel="noopener">Live project &rarr;</a>
+        </div>
+        <p class="project-desc">
+          A machine learning application that analyzes suspicious messages and URLs to identify potential scams and phishing attempts. Built using text classification and URL-based detection models.
+        </p>
+        <p class="project-tech">Python · TF-IDF · Logistic Regression · Random Forest</p>
+      </article>
 
-    <div class="case-study">
-      <div class="case-header">
-        <h3>DYNAMIS Fitness</h3>
-        <span class="status-pill">Live</span>
-      </div>
-      <p class="case-field"><strong>Problem —</strong> Fitness progress gets scattered across notes, spreadsheets and separate apps, making it difficult to consistently track workouts, body measurements, nutrition and physical changes over time.</p>
-      <p class="case-field"><strong>Solution —</strong>DYNAMIS brings fitness tracking into one focused platform, letting users log workouts, track body measurements and weight, monitor progress photos, manage supplements and view their training progress from a single account.</p>
-      <p class="case-field"><strong>Status —</strong>Live and deployed. The app is currently available for free for a limited time.</p>
-      <a href="https://dynamis-woad.vercel.app/" class="text-link" target="_blank" rel="noopener">View project →</a>
-    </div>
+      <article class="project-item">
+        <div class="project-top">
+          <h2 class="project-title">GIBYT</h2>
+          <a href="https://gibyt-webapp.vercel.app/" class="project-link" target="_blank" rel="noopener">Live project &rarr;</a>
+        </div>
+        <p class="project-desc">
+          A software studio website built as a functional web application, featuring user authentication, PostgreSQL integration, dashboards, and backend functionality.
+        </p>
+        <p class="project-tech">Python · Flask · PostgreSQL · HTML/CSS/JavaScript</p>
+      </article>
 
-    <div class="placeholder-card placeholder-card-wide">
-      <span class="status-pill status-pill-muted">More to come</span>
-      <p>
-        Additional projects will be added as they are completed, each with
-        the same structure: problem, solution, technologies used, and
-        current status.
-      </p>
-      <a href="contact.html" class="text-link">Discuss a project idea →</a>
+      <article class="project-item">
+        <div class="project-top">
+          <h2 class="project-title">DYNAMIS Fitness</h2>
+          <a href="https://dynamis-woad.vercel.app/" class="project-link" target="_blank" rel="noopener">Live project &rarr;</a>
+        </div>
+        <p class="project-desc">
+          A fitness tracking platform that brings workout logs, body measurements, nutrition, and progress tracking into one application.
+        </p>
+        <p class="project-tech">JavaScript · HTML/CSS · Web Application</p>
+      </article>
     </div>
-  </section>
-
+  </div>
 </main>
 
 <footer class="site-footer">
-  <div class="footer-top">
-    <div class="footer-brand">
-      <span style="font-family: var(--font-display); font-weight: 700; font-size: 1.3rem;">Abhay Krishna K</span>
-      <p class="footer-tagline">CSE AIML Student</p>
-    </div>
-    <div class="footer-links">
-      <div class="footer-col">
-        <h4>Site</h4>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="skills.html">Skills</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <a href="mailto:abhaykrishnak926@gmail.com">abhaykrishnak926@gmail.com</a>
-      </div>
-      <div class="footer-col">
-        <h4>Elsewhere</h4>
+  <div class="footer-inner">
+    <div class="footer-primary">
+      <span class="footer-name">Abhay Krishna K</span>
+      <div class="footer-links">
         <a href="https://github.com/abhaykrishnak926-create" target="_blank" rel="noopener">GitHub</a>
+        <span class="footer-sep" aria-hidden="true">·</span>
         <a href="https://www.linkedin.com/in/abhay-krishna-k-b422a4380" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="footer-sep" aria-hidden="true">·</span>
+        <a href="mailto:abhaykrishnak926@gmail.com">Email</a>
       </div>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; <span id="year"></span> Abhay Krishna K. All rights reserved.</p>
+    <p class="footer-copy">&copy; <span id="year"></span> Abhay Krishna K. All rights reserved.</p>
   </div>
 </footer>
 
