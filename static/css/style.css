@@ -252,8 +252,8 @@ p:last-child {
 }
 
 .profile-photo {
-  width: 104px;
-  height: 104px;
+  width: 204px;
+  height: 204px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
